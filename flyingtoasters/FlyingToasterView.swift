@@ -95,7 +95,7 @@ class FlyingToastersView: ScreenSaverView {
     }
     
     func configureScreenAttributes(frame: NSRect) {
-        
+
         //Set some default attributes
         self.mainAttributes = [
             NSFontAttributeName: NSFont.monospacedDigitSystemFont(ofSize: self.defaultFontSize, weight: NSFontWeightUltraLight),
