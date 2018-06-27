@@ -8,6 +8,8 @@ So I combined them.
 
 If you'd just like to use it, you can do that here: [Download](https://github.com/jamesmillerio/flying-toasters-clock/raw/master/dist/Flying%20Toasters%20Clock.zip)
 
+### Modify
+
 If you'd like to modify this screensaver to have more/less toast and toasters, just pull down the source and change the following line of [FlyingToastersView.swift](https://github.com/jamesmillerio/flying-toasters-clock/blob/master/flyingtoasters/FlyingToasterView.swift):
 
 > let maxToastsAndToasters: Int = 30
