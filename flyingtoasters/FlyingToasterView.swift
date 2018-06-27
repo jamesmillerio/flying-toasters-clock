@@ -29,7 +29,7 @@ class FlyingToastersView: ScreenSaverView {
         
         super.init(frame: frame, isPreview: isPreview)
         
-        self.dateFormatter.dateFormat = "HH:mm:ss"
+        self.dateFormatter.dateFormat = "h:mm:ss"
         self.configureScreenAttributes(frame: frame)
         self.spawnToastersAndToast()
     }
