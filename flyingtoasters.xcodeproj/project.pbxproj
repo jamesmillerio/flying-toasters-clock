@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AF1554D20E14828006CBDF7 /* FlyingToasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1554C20E14828006CBDF7 /* FlyingToasterView.swift */; };
+		1AF1555020E14974006CBDF7 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF1554F20E14974006CBDF7 /* ScreenSaver.framework */; };
+		1AF1555620E18A23006CBDF7 /* toast.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1AF1555420E18A23006CBDF7 /* toast.gif */; };
+		1AF1555720E18A23006CBDF7 /* toaster.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1AF1555520E18A23006CBDF7 /* toaster.gif */; };
+		1AF1555920E1EA0F006CBDF7 /* SpriteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1555820E1EA0F006CBDF7 /* SpriteProtocol.swift */; };
+		1AF1555B20E1EAC2006CBDF7 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1555A20E1EAC2006CBDF7 /* Toast.swift */; };
+		1AF1555D20E1FAB3006CBDF7 /* Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1555C20E1FAB3006CBDF7 /* Toaster.swift */; };
+		1AF6B52B20E3C9940032DC83 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF6B52A20E3C9930032DC83 /* thumbnail.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1AF1553F20E146B6006CBDF7 /* Flying Toasters.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flying Toasters.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF1554620E146B6006CBDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF1554C20E14828006CBDF7 /* FlyingToasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingToasterView.swift; sourceTree = "<group>"; };
+		1AF1554F20E14974006CBDF7 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		1AF1555420E18A23006CBDF7 /* toast.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = toast.gif; sourceTree = "<group>"; };
+		1AF1555520E18A23006CBDF7 /* toaster.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = toaster.gif; sourceTree = "<group>"; };
+		1AF1555820E1EA0F006CBDF7 /* SpriteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteProtocol.swift; sourceTree = "<group>"; };
+		1AF1555A20E1EAC2006CBDF7 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		1AF1555C20E1FAB3006CBDF7 /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
+		1AF6B52A20E3C9930032DC83 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AF1553B20E146B6006CBDF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF1555020E14974006CBDF7 /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AF1553520E146B6006CBDF7 = {
+			isa = PBXGroup;
+			children = (
+				1AF1554120E146B6006CBDF7 /* flyingtoasters */,
+				1AF1554020E146B6006CBDF7 /* Products */,
+				1AF1554E20E14974006CBDF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AF1554020E146B6006CBDF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AF1553F20E146B6006CBDF7 /* Flying Toasters.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AF1554120E146B6006CBDF7 /* flyingtoasters */ = {
+			isa = PBXGroup;
+			children = (
+				1AF6B52A20E3C9930032DC83 /* thumbnail.png */,
+				1AF1555420E18A23006CBDF7 /* toast.gif */,
+				1AF1555520E18A23006CBDF7 /* toaster.gif */,
+				1AF1554620E146B6006CBDF7 /* Info.plist */,
+				1AF1554C20E14828006CBDF7 /* FlyingToasterView.swift */,
+				1AF1555820E1EA0F006CBDF7 /* SpriteProtocol.swift */,
+				1AF1555A20E1EAC2006CBDF7 /* Toast.swift */,
+				1AF1555C20E1FAB3006CBDF7 /* Toaster.swift */,
+			);
+			path = flyingtoasters;
+			sourceTree = "<group>";
+		};
+		1AF1554E20E14974006CBDF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AF1554F20E14974006CBDF7 /* ScreenSaver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AF1553C20E146B6006CBDF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1AF1553E20E146B6006CBDF7 /* flyingtoasters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF1554920E146B6006CBDF7 /* Build configuration list for PBXNativeTarget "flyingtoasters" */;
+			buildPhases = (
+				1AF1553A20E146B6006CBDF7 /* Sources */,
+				1AF1553B20E146B6006CBDF7 /* Frameworks */,
+				1AF1553C20E146B6006CBDF7 /* Headers */,
+				1AF1553D20E146B6006CBDF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flyingtoasters;
+			productName = flyingtoasters;
+			productReference = 1AF1553F20E146B6006CBDF7 /* Flying Toasters.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AF1553620E146B6006CBDF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = jamesmiller.io;
+				TargetAttributes = {
+					1AF1553E20E146B6006CBDF7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = 1AF1553920E146B6006CBDF7 /* Build configuration list for PBXProject "flyingtoasters" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1AF1553520E146B6006CBDF7;
+			productRefGroup = 1AF1554020E146B6006CBDF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AF1553E20E146B6006CBDF7 /* flyingtoasters */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AF1553D20E146B6006CBDF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF1555720E18A23006CBDF7 /* toaster.gif in Resources */,
+				1AF1555620E18A23006CBDF7 /* toast.gif in Resources */,
+				1AF6B52B20E3C9940032DC83 /* thumbnail.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AF1553A20E146B6006CBDF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF1555920E1EA0F006CBDF7 /* SpriteProtocol.swift in Sources */,
+				1AF1554D20E14828006CBDF7 /* FlyingToasterView.swift in Sources */,
+				1AF1555D20E1FAB3006CBDF7 /* Toaster.swift in Sources */,
+				1AF1555B20E1EAC2006CBDF7 /* Toast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1AF1554720E146B6006CBDF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1AF1554820E146B6006CBDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1AF1554A20E146B6006CBDF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C8RXG6X2DJ;
+				INFOPLIST_FILE = flyingtoasters/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.jamesmiller.flyingtoasters;
+				PRODUCT_NAME = "Flying Toasters";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		1AF1554B20E146B6006CBDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C8RXG6X2DJ;
+				INFOPLIST_FILE = flyingtoasters/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.jamesmiller.flyingtoasters;
+				PRODUCT_NAME = "Flying Toasters";
+				SWIFT_VERSION = 3.0;
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AF1553920E146B6006CBDF7 /* Build configuration list for PBXProject "flyingtoasters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF1554720E146B6006CBDF7 /* Debug */,
+				1AF1554820E146B6006CBDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AF1554920E146B6006CBDF7 /* Build configuration list for PBXNativeTarget "flyingtoasters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF1554A20E146B6006CBDF7 /* Debug */,
+				1AF1554B20E146B6006CBDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AF1553620E146B6006CBDF7 /* Project object */;
+}
