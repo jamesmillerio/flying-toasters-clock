@@ -8,4 +8,4 @@ If you'd like to modify this screensaver to have more/less toast and toasters, j
 
 > let maxToastsAndToasters: Int = 30
 
-![https://raw.githubusercontent.com/jamesmillerio/flying-toasters-clock/master/screenshot.png]
+![Flying Toasters!](https://raw.githubusercontent.com/jamesmillerio/flying-toasters-clock/master/screenshot.png)
