@@ -24,8 +24,11 @@ class FlyingToastersView: ScreenSaverView {
     var mainAttributes: [String: AnyObject] = [String: AnyObject]()
     var currentTime: Date = Date()
     var timestamp: NSString = ""
+    var screenFrame: NSRect
     
     override init?(frame: NSRect, isPreview: Bool) {
+        
+        self.screenFrame = frame
         
         super.init(frame: frame, isPreview: isPreview)
         
@@ -45,6 +48,11 @@ class FlyingToastersView: ScreenSaverView {
         self.deltaTime = CACurrentMediaTime() - self.previousTimestamp
         self.previousTimestamp = CACurrentMediaTime()
         self.timestamp = self.dateFormatter.string(from: self.currentTime) as NSString
+        
+        let timestampSize = timestamp.size(withAttributes: mainAttributes)
+        
+        //Set our new screen center
+        self.screenCenter = CGPoint(x: (self.screenFrame.width - timestampSize.width) / 2, y: (self.screenFrame.height - timestampSize.height) / 2)
         
         //Draw the background
         for sprite in self.toastsAndToasters {
@@ -112,10 +120,5 @@ class FlyingToastersView: ScreenSaverView {
             NSFontAttributeName: NSFont.monospacedDigitSystemFont(ofSize: fontSize, weight: NSFontWeightUltraLight),
             NSForegroundColorAttributeName: NSColor.white
         ];
-        
-        timestampSize = timestamp.size(withAttributes: mainAttributes)
-        
-        //Set our new screen center
-        self.screenCenter = CGPoint(x: (frame.width - timestampSize.width) / 2, y: (frame.height - timestampSize.height) / 2)
     }
 }
