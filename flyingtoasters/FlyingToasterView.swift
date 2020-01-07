@@ -14,15 +14,16 @@ class FlyingToastersView: ScreenSaverView {
     
     let dateFormatter = DateFormatter()
     let bundle = Bundle.init(identifier: "io.jamesmiller.flyingtoasters")!
-    let maxToastsAndToasters: Int = 30
+    let maxToastsAndToasters: Int = 60
     let defaultFontSize: CGFloat = 300.0
     
     var deltaTime: TimeInterval?
-    var previousTimestamp: CFTimeInterval = CACurrentMediaTime()
+    var previousTimestamp: Double = NSDate.timeIntervalSinceReferenceDate as Double
+    var lastFrameTime: Double = 0.0
     var toastsAndToasters: [SpriteProtocol] = [SpriteProtocol]()
     var screenCenter: CGPoint = CGPoint(x: 0, y: 0)
-    var mainAttributes: [String: AnyObject] = [String: AnyObject]()
-    var currentTime: Date = Date()
+    var mainAttributes: [NSAttributedString.Key: AnyObject] = [NSAttributedString.Key: AnyObject]()
+    var currentTime: Double = NSDate.timeIntervalSinceReferenceDate as Double
     var timestamp: NSString = ""
     var screenFrame: NSRect
     
@@ -44,10 +45,13 @@ class FlyingToastersView: ScreenSaverView {
     override func draw(_ rect: NSRect) {
         super.draw(rect)
         
-        self.currentTime = Date()
-        self.deltaTime = CACurrentMediaTime() - self.previousTimestamp
-        self.previousTimestamp = CACurrentMediaTime()
-        self.timestamp = self.dateFormatter.string(from: self.currentTime) as NSString
+        self.currentTime = NSDate.timeIntervalSinceReferenceDate as Double
+        //self.deltaTime = CACurrentMediaTime() - self.previousTimestamp
+        //self.previousTimestamp = CACurrentMediaTime()
+        self.deltaTime = self.currentTime - self.previousTimestamp
+        
+        //self.timestamp = self.dateFormatter.string(from: self.currentTime) as NSString
+        self.timestamp = self.dateFormatter.string(from: Date()) as NSString
         
         let timestampSize = timestamp.size(withAttributes: mainAttributes)
         
@@ -72,6 +76,8 @@ class FlyingToastersView: ScreenSaverView {
                 sprite.update(delta: CGFloat(self.deltaTime!))
             }
         }
+        
+        self.previousTimestamp = NSDate.timeIntervalSinceReferenceDate as Double
     }
     
     override func animateOneFrame() {
@@ -98,27 +104,27 @@ class FlyingToastersView: ScreenSaverView {
     func updateToastersAndToast(delta: Double) {
         for sprite in self.toastsAndToasters {
             //sprite.update(delta: CGFloat(abs(delta)))
-            sprite.update(delta: CGFloat(abs(delta)))
+            sprite.update(delta: CGFloat(delta))
         }
     }
     
     func configureScreenAttributes(frame: NSRect) {
-
+        
         //Set some default attributes
         self.mainAttributes = [
-            NSFontAttributeName: NSFont.monospacedDigitSystemFont(ofSize: self.defaultFontSize, weight: NSFontWeightUltraLight),
-            NSForegroundColorAttributeName: NSColor.white
+            NSAttributedString.Key.font: NSFont.monospacedDigitSystemFont(ofSize: self.defaultFontSize, weight: NSFont.Weight.ultraLight),
+            NSAttributedString.Key.foregroundColor: NSColor.white
         ];
         
-        let timestamp = self.dateFormatter.string(from: self.currentTime) as NSString
-        var timestampSize = timestamp.size(withAttributes: mainAttributes)
+        let timestamp = self.dateFormatter.string(from: Date()) as NSString
+        let timestampSize = timestamp.size(withAttributes: mainAttributes)
         let widthPerFontSize = timestampSize.width / self.defaultFontSize
         let fontSize = (self.bounds.width * 0.75) / widthPerFontSize
         
         //Set our final font attributes
         self.mainAttributes = [
-            NSFontAttributeName: NSFont.monospacedDigitSystemFont(ofSize: fontSize, weight: NSFontWeightUltraLight),
-            NSForegroundColorAttributeName: NSColor.white
+            NSAttributedString.Key.font: NSFont.monospacedDigitSystemFont(ofSize: fontSize, weight: NSFont.Weight.ultraLight),
+            NSAttributedString.Key.foregroundColor: NSColor.white
         ];
     }
 }

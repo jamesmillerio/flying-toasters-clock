@@ -11,8 +11,10 @@ import ScreenSaver
 
 public class Toaster : SpriteProtocol {
     let bundle = Bundle.init(identifier: "io.jamesmiller.flyingtoasters")!
-    let drawPerFrame: Int = 6
-    let frameRate: Int = 24
+    //let drawPerFrame: Int = 6
+    //let frameRate: Int = 24
+    let drawPerFrame: Int = 2
+    let frameRate: Int = 8
     
     var image: NSImage
     var point: CGPoint
@@ -20,7 +22,7 @@ public class Toaster : SpriteProtocol {
     var bounds: CGRect
     var frames: [CGRect] = [CGRect]()
     var currentFrameCount: Int = 0
-    var speed: CGPoint = CGPoint(x: 1, y: 1)
+    var speed: CGPoint = CGPoint(x: 3, y: 3)
     var direction: Int = 1
     var isForeground: Bool = false
     
@@ -87,8 +89,10 @@ public class Toaster : SpriteProtocol {
     }
     
     func generateRandomSpeed() -> CGPoint {
-        let maxHoriontalSpeed = 72.0
-        let minHorizontalSpeed = 27.0
+        //let maxHoriontalSpeed = 72.0
+        //let minHorizontalSpeed = 27.0
+        let maxHoriontalSpeed = 72.0 * 2.0
+        let minHorizontalSpeed = 27.0 * 2.0
         let ratio = Double(minHorizontalSpeed / maxHoriontalSpeed)
         let xSpeed = Double(arc4random_uniform(UInt32(maxHoriontalSpeed - minHorizontalSpeed))) + minHorizontalSpeed
         
